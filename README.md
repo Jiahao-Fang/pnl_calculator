@@ -103,15 +103,3 @@ The main PnL calculation logic is implemented in header files rather than source
 2. **Container Choice**
    - Current Implementation: Simple RingBuffer for FIFO and Stack for LIFO
    - For latency-sensitive applications: Consider using [atomic-queue](https://github.com/Jiahao-Fang/atomic-queue), which provides high-performance lock-free queue implementations optimized for concurrent access
-
-### Future Improvements
-
-1. Add support for more accounting methods
-2. Implement batch processing mode for better performance in low-throughput scenarios
-3. Add support for different output formats
-4. Integrate with high-performance queue implementations for latency-sensitive environments
-
-## Contributing
-
-Feel free to submit issues and enhancement requests!
-
