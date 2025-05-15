@@ -103,3 +103,8 @@ The main PnL calculation logic is implemented in header files rather than source
 2. **Container Choice**
    - Current Implementation: Simple RingBuffer for FIFO and Stack for LIFO
    - For latency-sensitive applications: Consider using [atomic-queue](https://github.com/Jiahao-Fang/atomic-queue), which provides high-performance lock-free queue implementations optimized for concurrent access
+
+3. **Ring Buffer Size Limitation**
+   - The current implementation uses a simple ring buffer for FIFO and stack for LIFO
+   - The ring buffer size is limited to powers of 2 (e.g., 2, 4, 8, 16, etc.) for efficient modulo operations
+   - This limitation is a personal preference and can be modified by changing the container implementation
