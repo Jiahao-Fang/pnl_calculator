@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/test_pnl_calculator.dir/tests/test_pnl_calculator.cpp.o -o test_pnl_calculator  lib/libgtest_main.a lib/libgmock_main.a lib/libgmock.a lib/libgtest.a 
